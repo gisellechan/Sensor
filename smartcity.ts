@@ -35,7 +35,7 @@ namespace smartcity {
     //% weight=225
     export function read_light_sensor(pin: InputPin): number {
         temp_pin = parseInt(pin.toString())
-		temp = Math.round(1023 - pins.analogReadPin(temp_pin)/1023*100)
+		temp = Math.round(100 - pins.analogReadPin(temp_pin)/1023*100)
         return temp
     }
 
@@ -44,7 +44,7 @@ namespace smartcity {
     //% weight=200
     export function read_raindrop_sensor(pin: InputPin): number {
         temp_pin = parseInt(pin.toString())
-		temp = Math.round(1023 - pins.analogReadPin(temp_pin)/1023*100)
+		temp = Math.round(100 - pins.analogReadPin(temp_pin)/1023*100)
         return temp
     }
 
@@ -53,7 +53,7 @@ namespace smartcity {
     //% weight=180
     export function read_motion_sensor(pin: InputPin): number {
         temp_pin = parseInt(pin.toString())
-		temp = Math.round(1023 - pins.analogReadPin(temp_pin)/1023*100)
+		temp = Math.round(100 - pins.analogReadPin(temp_pin)/1023*100)
         return temp
     }
 	
